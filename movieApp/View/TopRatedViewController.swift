@@ -18,6 +18,8 @@ class TopRatedViewController: UIViewController {
     
     var topRatedMoviesList: [TopRatedMoviesList] = []
 
+    @IBOutlet weak var topRatedCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,7 +34,7 @@ extension TopRatedViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopRatedCell", for: indexPath) as! TopRatedCell
+        let cell = topRatedCollectionView.dequeueReusableCell(withReuseIdentifier: "TopRatedCell", for: indexPath) as! TopRatedCell
         cell.imageView.image = UIImage(systemName: "cloud")
         return cell
         }

@@ -1,5 +1,5 @@
 //
-//  TopRated.swift
+//  Popular.swift
 //  movieApp
 //
 //  Created by mac on 2021/05/11.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-class TopRatedgMovies: Codable {
-    let results: [TopRatedMoviesList]?
+class PopularMovies: Codable {
+    let results: [PopularMoviesList]?
 }
 
-class TopRatedMoviesList: Codable {
+class PopularMoviesList: Codable {
     let poster_path: String?
     let adult: Bool?
     let overview: String?
@@ -20,7 +20,7 @@ class TopRatedMoviesList: Codable {
     let id: Int?
     let original_title: String?
     let original_language: String?
-    let title: String?
+    let title: String
     let backdrop_path: String?
     let popularity: Double?
     let vote_count: Int?

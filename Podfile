@@ -8,6 +8,9 @@ target 'movieApp' do
   # Pods for movieApp
 
 pod 'Alamofire', '~> 5.2'
+pod 'SwiftyJSON'
+pod 'KakaoSDK'
+pod 'Kingfisher', '~> 6.0'
 
 end
 

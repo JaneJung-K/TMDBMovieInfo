@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DRW-8J-Nvr">
-                                <rect key="frame" x="20" y="144" width="394" height="669"/>
+                                <rect key="frame" x="0.0" y="144" width="394" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="394" id="LeS-na-ZmU"/>
@@ -78,8 +78,8 @@
                         <viewLayoutGuide key="safeArea" id="KWf-L2-i9Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DRW-8J-Nvr" firstAttribute="leading" secondItem="KWf-L2-i9Y" secondAttribute="leading" id="97W-S7-pOs"/>
                             <constraint firstItem="fcq-ah-xA6" firstAttribute="leading" secondItem="KWf-L2-i9Y" secondAttribute="leading" constant="20" id="eLb-Lc-VVl"/>
-                            <constraint firstItem="DRW-8J-Nvr" firstAttribute="leading" secondItem="KWf-L2-i9Y" secondAttribute="leading" constant="20" id="iAy-Wt-3zS"/>
                             <constraint firstItem="DRW-8J-Nvr" firstAttribute="top" secondItem="fcq-ah-xA6" secondAttribute="bottom" constant="43" id="plm-le-m6Y"/>
                             <constraint firstItem="fcq-ah-xA6" firstAttribute="top" secondItem="KWf-L2-i9Y" secondAttribute="top" constant="21" id="tl5-Yh-880"/>
                         </constraints>
@@ -92,6 +92,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgz-HD-gTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808.69565217391312" y="-312.05357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RpB-xx-3mk">
+            <objects>
+                <viewController id="W5t-TZ-gR4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Chx-yq-GBx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LnK-LS-8Fs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1c-4f-ZML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="367"/>
         </scene>
         <!--DramaViewController-->
         <scene sceneID="SWD-6p-P7i">

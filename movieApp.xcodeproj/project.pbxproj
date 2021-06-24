@@ -28,6 +28,7 @@
 		7C993A5F2E226714E49E8F58 /* Pods_movieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A191704C5066098401113BE6 /* Pods_movieApp.framework */; };
 		7D965C912681B165007CF8F0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */; };
 		7D965C922681B165007CF8F0 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */; };
+		7DBE727C26846B70004FA2A4 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE727B26846B70004FA2A4 /* ApiCaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		2671F179BAC706EBA206D50F /* Pods-movieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieApp.debug.xcconfig"; path = "Target Support Files/Pods-movieApp/Pods-movieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		7DBE727B26846B70004FA2A4 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
 		A191704C5066098401113BE6 /* Pods_movieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 			children = (
 				04BF11B5264A725200CD794A /* Movie.swift */,
 				04E80514264BEBE000DF40BD /* Drama.swift */,
+				7DBE727B26846B70004FA2A4 /* ApiCaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				04E80513264BD03700DF40BD /* MLViewController.swift in Sources */,
 				7D965C912681B165007CF8F0 /* MovieTableViewCell.swift in Sources */,
 				04BF11B6264A725200CD794A /* Movie.swift in Sources */,
+				7DBE727C26846B70004FA2A4 /* ApiCaller.swift in Sources */,
 				04BF119B264A593700CD794A /* NowPlayingListViewController.swift in Sources */,
 				04BF11B3264A6F0D00CD794A /* TopRated.swift in Sources */,
 				04BF11AF264A638300CD794A /* NowPlaying.swift in Sources */,

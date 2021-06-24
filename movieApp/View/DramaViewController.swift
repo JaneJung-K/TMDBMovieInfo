@@ -56,7 +56,6 @@ extension DramaViewController: UICollectionViewDelegateFlowLayout {
 extension DramaViewController {
     private func fetchData() {
         let apiKey = "afe279a4b6fb7def93b05fe10d91d8af"
-        let language = "en-US"
         let page = 1
         AF.request("https://api.themoviedb.org/3/tv/popular?api_key=\(apiKey)&page=\(page)" , method: .post)
             .validate()

@@ -11,6 +11,7 @@ pod 'Alamofire', '~> 5.2'
 pod 'SwiftyJSON'
 pod 'KakaoSDK'
 pod 'Kingfisher', '~> 6.0'
+pod 'Cosmos', '~> 23.0'
 
 end
 

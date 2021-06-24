@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,35 +17,66 @@
                 <rect key="frame" x="0.0" y="0.0" width="479" height="204"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0I6-tq-OXM">
-                        <rect key="frame" x="0.0" y="0.0" width="153" height="200"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYK-Et-MYG">
+                        <rect key="frame" x="168" y="16" width="218" height="24"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="254" id="vJh-rM-4Ag"/>
+                            <constraint firstAttribute="width" constant="218" id="LMo-A4-8Sa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMr-ZJ-1gd">
+                        <rect key="frame" x="168" y="108" width="140" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0I6-tq-OXM">
+                        <rect key="frame" x="0.0" y="2" width="154" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0I6-tq-OXM" secondAttribute="height" multiplier="77:100" id="cXn-lg-cJt"/>
+                            <constraint firstAttribute="width" constant="154" id="m8p-I2-OrW"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYK-Et-MYG">
-                        <rect key="frame" x="168" y="16" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMr-ZJ-1gd">
-                        <rect key="frame" x="168" y="105" width="140" height="33"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sN8-L4-1pU" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="168" y="134" width="240" height="36"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="ptB-Nx-UaH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" systemColor="systemYellowColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="sN8-L4-1pU" firstAttribute="top" secondItem="zMr-ZJ-1gd" secondAttribute="bottom" constant="8" symbolic="YES" id="1pw-UT-PiQ"/>
+                    <constraint firstItem="gYK-Et-MYG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="FhA-4m-XLF"/>
+                    <constraint firstItem="sN8-L4-1pU" firstAttribute="leading" secondItem="0I6-tq-OXM" secondAttribute="trailing" constant="14" id="Kr8-zY-wfX"/>
+                    <constraint firstItem="zMr-ZJ-1gd" firstAttribute="top" secondItem="gYK-Et-MYG" secondAttribute="bottom" constant="68" id="f5C-Q9-wvb"/>
+                    <constraint firstItem="zMr-ZJ-1gd" firstAttribute="leading" secondItem="0I6-tq-OXM" secondAttribute="trailing" constant="14" id="wbm-JD-K3m"/>
+                    <constraint firstItem="gYK-Et-MYG" firstAttribute="leading" secondItem="0I6-tq-OXM" secondAttribute="trailing" constant="14" id="xV1-gG-6Ya"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="movieImage" destination="0I6-tq-OXM" id="rHp-ah-fpG"/>
                 <outlet property="movieReleasedDate" destination="zMr-ZJ-1gd" id="a7w-hZ-2mR"/>
                 <outlet property="movieTitle" destination="gYK-Et-MYG" id="A87-Mt-hAx"/>
+                <outlet property="ratingScore" destination="sN8-L4-1pU" id="cHQ-9f-TG6"/>
             </connections>
             <point key="canvasLocation" x="-254.34782608695653" y="185.49107142857142"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

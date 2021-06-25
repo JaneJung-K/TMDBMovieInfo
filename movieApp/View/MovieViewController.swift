@@ -19,7 +19,6 @@ class MovieViewController: UIViewController {
 //            print(self?.dataSource)
             self?.movieTableView.reloadData()
         }
-        
     }
 }
 
@@ -94,7 +93,6 @@ class MovieApiCaller {
                     print(error.localizedDescription)
                   }
                 }
-        
         }
     }
 

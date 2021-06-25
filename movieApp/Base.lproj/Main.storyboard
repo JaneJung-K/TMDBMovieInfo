@@ -183,65 +183,6 @@
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="-312.05357142857139"/>
         </scene>
-        <!--AI-->
-        <scene sceneID="RSQ-kG-vyz">
-            <objects>
-                <viewController id="vcc-0b-ei0" customClass="MLViewController" customModule="movieApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6OD-Ma-G3Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cE4-cQ-h0J">
-                                <rect key="frame" x="104.5" y="673" width="205.5" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="AUN-Mi-UXp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpm-Jz-iy4">
-                                <rect key="frame" x="153" y="221" width="108" height="120"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTD-hT-X6s" userLabel="Research!">
-                                <rect key="frame" x="135.5" y="741" width="143" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="JxR-Ot-9uM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Recearch!">
-                                    <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="predictPressed:" destination="vcc-0b-ei0" eventType="touchUpInside" id="7VK-Gv-36t"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="07p-pe-JwU"/>
-                        <color key="backgroundColor" red="0.45464140180000001" green="0.99002128840000003" blue="0.83920115230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="TTD-hT-X6s" firstAttribute="centerX" secondItem="07p-pe-JwU" secondAttribute="centerX" id="3rL-0K-VTi"/>
-                            <constraint firstItem="fpm-Jz-iy4" firstAttribute="top" secondItem="07p-pe-JwU" secondAttribute="top" constant="177" id="PME-Rr-02g"/>
-                            <constraint firstItem="fpm-Jz-iy4" firstAttribute="centerX" secondItem="07p-pe-JwU" secondAttribute="centerX" id="Upp-YW-51k"/>
-                            <constraint firstItem="TTD-hT-X6s" firstAttribute="top" secondItem="cE4-cQ-h0J" secondAttribute="bottom" constant="18" id="ee7-aT-QVA"/>
-                            <constraint firstItem="cE4-cQ-h0J" firstAttribute="centerX" secondItem="07p-pe-JwU" secondAttribute="centerX" id="jFL-bk-lEu"/>
-                            <constraint firstItem="07p-pe-JwU" firstAttribute="bottom" secondItem="TTD-hT-X6s" secondAttribute="bottom" constant="22" id="spS-S3-f2W"/>
-                            <constraint firstItem="cE4-cQ-h0J" firstAttribute="width" secondItem="6OD-Ma-G3Z" secondAttribute="width" multiplier="0.496377" id="uPD-W8-1bM"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="AI" image="desktopcomputer" catalog="system" id="DeY-7s-JD3"/>
-                    <connections>
-                        <outlet property="backgroundView" destination="6OD-Ma-G3Z" id="O9q-Es-aDn"/>
-                        <outlet property="sentimentLabel" destination="fpm-Jz-iy4" id="NlL-5L-maA"/>
-                        <outlet property="textField" destination="cE4-cQ-h0J" id="Wvu-GZ-802"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1q8-hk-sHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2239.130434782609" y="-312.05357142857139"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hcy-XL-p3w">
             <objects>
@@ -273,7 +214,6 @@
                     <connections>
                         <segue destination="6Pc-Qu-Sve" kind="relationship" relationship="viewControllers" id="1iy-sF-y5k"/>
                         <segue destination="sNr-TZ-KZb" kind="relationship" relationship="viewControllers" id="mXf-xN-VsL"/>
-                        <segue destination="vcc-0b-ei0" kind="relationship" relationship="viewControllers" id="Sqq-yh-eOG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7D-gK-uh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -282,7 +222,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="desktopcomputer" catalog="system" width="128" height="101"/>
         <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
         <image name="kakao Login" width="183" height="45"/>
         <image name="star.slash.fill" catalog="system" width="128" height="116"/>

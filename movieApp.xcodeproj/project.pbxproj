@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0439A7E5264D5DE900759960 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0439A7E4264D5DE900759960 /* TweetSentimentClassifier.mlmodel */; };
 		04BF117C264A2F7C00CD794A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF117B264A2F7C00CD794A /* AppDelegate.swift */; };
 		04BF117E264A2F7C00CD794A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF117D264A2F7C00CD794A /* SceneDelegate.swift */; };
 		04BF1183264A2F7C00CD794A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF1181264A2F7C00CD794A /* Main.storyboard */; };
@@ -21,7 +20,6 @@
 		04BF11B3264A6F0D00CD794A /* TopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF11B2264A6F0D00CD794A /* TopRated.swift */; };
 		04BF11B6264A725200CD794A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF11B5264A725200CD794A /* Movie.swift */; };
 		04E80511264BD00D00DF40BD /* DramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E80510264BD00D00DF40BD /* DramaViewController.swift */; };
-		04E80513264BD03700DF40BD /* MLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E80512264BD03700DF40BD /* MLViewController.swift */; };
 		04E80515264BEBE000DF40BD /* Drama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E80514264BEBE000DF40BD /* Drama.swift */; };
 		7C993A5F2E226714E49E8F58 /* Pods_movieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A191704C5066098401113BE6 /* Pods_movieApp.framework */; };
 		7D965C912681B165007CF8F0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */; };
@@ -43,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0439A7E4264D5DE900759960 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		04BF1178264A2F7C00CD794A /* movieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF117B264A2F7C00CD794A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BF117D264A2F7C00CD794A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +56,6 @@
 		04BF11B2264A6F0D00CD794A /* TopRated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRated.swift; sourceTree = "<group>"; };
 		04BF11B5264A725200CD794A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04E80510264BD00D00DF40BD /* DramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaViewController.swift; sourceTree = "<group>"; };
-		04E80512264BD03700DF40BD /* MLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewController.swift; sourceTree = "<group>"; };
 		04E80514264BEBE000DF40BD /* Drama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drama.swift; sourceTree = "<group>"; };
 		228CCAA9D74F9936556858E6 /* Pods-movieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieApp.release.xcconfig"; path = "Target Support Files/Pods-movieApp/Pods-movieApp.release.xcconfig"; sourceTree = "<group>"; };
 		2671F179BAC706EBA206D50F /* Pods-movieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieApp.debug.xcconfig"; path = "Target Support Files/Pods-movieApp/Pods-movieApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,8 +128,6 @@
 				04BF1196264A566100CD794A /* LoginViewController.swift */,
 				04BF11A1264A5A8900CD794A /* MovieViewController.swift */,
 				04E80510264BD00D00DF40BD /* DramaViewController.swift */,
-				04E80512264BD03700DF40BD /* MLViewController.swift */,
-				0439A7E4264D5DE900759960 /* TweetSentimentClassifier.mlmodel */,
 				7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */,
 				7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */,
 			);
@@ -284,7 +278,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF1197264A566100CD794A /* LoginViewController.swift in Sources */,
-				04E80513264BD03700DF40BD /* MLViewController.swift in Sources */,
 				7D965C912681B165007CF8F0 /* MovieTableViewCell.swift in Sources */,
 				04BF11B6264A725200CD794A /* Movie.swift in Sources */,
 				7DBE727C26846B70004FA2A4 /* ApiCaller.swift in Sources */,
@@ -292,7 +285,6 @@
 				04BF11B3264A6F0D00CD794A /* TopRated.swift in Sources */,
 				04BF11AF264A638300CD794A /* NowPlaying.swift in Sources */,
 				04BF117C264A2F7C00CD794A /* AppDelegate.swift in Sources */,
-				0439A7E5264D5DE900759960 /* TweetSentimentClassifier.mlmodel in Sources */,
 				04BF11A2264A5A8900CD794A /* MovieViewController.swift in Sources */,
 				04BF117E264A2F7C00CD794A /* SceneDelegate.swift in Sources */,
 				04E80511264BD00D00DF40BD /* DramaViewController.swift in Sources */,

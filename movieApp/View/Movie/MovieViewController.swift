@@ -1,9 +1,10 @@
+
+
 import UIKit
 import Alamofire
 import Kingfisher
 
 class MovieViewController: UIViewController {
-    
     @IBOutlet weak var movieTableView: UITableView!
     
     let movieApiCaller = MovieApiCaller()
@@ -45,6 +46,11 @@ extension MovieViewController: UITableViewDataSource, UITableViewDelegate, UIScr
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        
+        let newView = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        newView.getId = dataSource[indexPath.row].id
+        self.navigationController?.pushViewController(newView, animated: true)
+        
     }
     
     

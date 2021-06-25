@@ -25,6 +25,8 @@
 		7D965C912681B165007CF8F0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */; };
 		7D965C922681B165007CF8F0 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */; };
 		7DBE727C26846B70004FA2A4 /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE727B26846B70004FA2A4 /* ApiCaller.swift */; };
+		7DBE728526855780004FA2A4 /* DetailApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE728426855780004FA2A4 /* DetailApiCaller.swift */; };
+		7DBE728726855E7D004FA2A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBE728626855E7D004FA2A4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +64,8 @@
 		7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		7DBE727B26846B70004FA2A4 /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		7DBE728426855780004FA2A4 /* DetailApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailApiCaller.swift; sourceTree = "<group>"; };
+		7DBE728626855E7D004FA2A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A191704C5066098401113BE6 /* Pods_movieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,10 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				04BF1196264A566100CD794A /* LoginViewController.swift */,
-				04BF11A1264A5A8900CD794A /* MovieViewController.swift */,
+				7DBE728326855663004FA2A4 /* Movie */,
 				04E80510264BD00D00DF40BD /* DramaViewController.swift */,
-				7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */,
-				7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 				04BF11B5264A725200CD794A /* Movie.swift */,
 				04E80514264BEBE000DF40BD /* Drama.swift */,
 				7DBE727B26846B70004FA2A4 /* ApiCaller.swift */,
+				7DBE728426855780004FA2A4 /* DetailApiCaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -151,6 +154,17 @@
 				228CCAA9D74F9936556858E6 /* Pods-movieApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7DBE728326855663004FA2A4 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				04BF11A1264A5A8900CD794A /* MovieViewController.swift */,
+				7D965C8F2681B165007CF8F0 /* MovieTableViewCell.swift */,
+				7D965C902681B165007CF8F0 /* MovieTableViewCell.xib */,
+				7DBE728626855E7D004FA2A4 /* DetailViewController.swift */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		C54EA1B8692F8559DD32981F /* Frameworks */ = {
@@ -279,6 +293,7 @@
 			files = (
 				04BF1197264A566100CD794A /* LoginViewController.swift in Sources */,
 				7D965C912681B165007CF8F0 /* MovieTableViewCell.swift in Sources */,
+				7DBE728526855780004FA2A4 /* DetailApiCaller.swift in Sources */,
 				04BF11B6264A725200CD794A /* Movie.swift in Sources */,
 				7DBE727C26846B70004FA2A4 /* ApiCaller.swift in Sources */,
 				04BF119B264A593700CD794A /* NowPlayingListViewController.swift in Sources */,
@@ -288,6 +303,7 @@
 				04BF11A2264A5A8900CD794A /* MovieViewController.swift in Sources */,
 				04BF117E264A2F7C00CD794A /* SceneDelegate.swift in Sources */,
 				04E80511264BD00D00DF40BD /* DramaViewController.swift in Sources */,
+				7DBE728726855E7D004FA2A4 /* DetailViewController.swift in Sources */,
 				04BF119E264A5A6500CD794A /* TopRatedViewController.swift in Sources */,
 				04E80515264BEBE000DF40BD /* Drama.swift in Sources */,
 			);

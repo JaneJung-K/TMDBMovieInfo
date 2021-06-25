@@ -40,7 +40,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sN8-L4-1pU" customClass="CosmosView" customModule="Cosmos">
-                        <rect key="frame" x="168" y="134" width="240" height="36"/>
+                        <rect key="frame" x="168" y="134" width="240" height="50"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="240" id="ptB-Nx-UaH"/>
@@ -56,7 +56,8 @@
                     <constraint firstItem="sN8-L4-1pU" firstAttribute="top" secondItem="zMr-ZJ-1gd" secondAttribute="bottom" constant="8" symbolic="YES" id="1pw-UT-PiQ"/>
                     <constraint firstItem="gYK-Et-MYG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="FhA-4m-XLF"/>
                     <constraint firstItem="sN8-L4-1pU" firstAttribute="leading" secondItem="0I6-tq-OXM" secondAttribute="trailing" constant="14" id="Kr8-zY-wfX"/>
-                    <constraint firstItem="zMr-ZJ-1gd" firstAttribute="top" secondItem="gYK-Et-MYG" secondAttribute="bottom" constant="68" id="f5C-Q9-wvb"/>
+                    <constraint firstItem="zMr-ZJ-1gd" firstAttribute="top" secondItem="gYK-Et-MYG" secondAttribute="bottom" priority="250" constant="68" id="LrG-m4-0sZ"/>
+                    <constraint firstAttribute="bottom" secondItem="sN8-L4-1pU" secondAttribute="bottom" constant="20" id="vcs-ma-dju"/>
                     <constraint firstItem="zMr-ZJ-1gd" firstAttribute="leading" secondItem="0I6-tq-OXM" secondAttribute="trailing" constant="14" id="wbm-JD-K3m"/>
                     <constraint firstItem="gYK-Et-MYG" firstAttribute="leading" secondItem="0I6-tq-OXM" secondAttribute="trailing" constant="14" id="xV1-gG-6Ya"/>
                 </constraints>

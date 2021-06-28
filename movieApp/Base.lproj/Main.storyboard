@@ -107,6 +107,13 @@
                                     <constraint firstAttribute="height" constant="341" id="mk0-4P-2Oy"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI6-Ie-Fnr">
+                                <rect key="frame" x="20" y="63" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LnK-LS-8Fs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,10 +125,13 @@
                             <constraint firstItem="0e2-OI-Dn6" firstAttribute="top" secondItem="LnK-LS-8Fs" secondAttribute="top" id="hdh-yM-2Jc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moviePoster" destination="0e2-OI-Dn6" id="Dkh-UY-ccg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1c-4f-ZML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="1096"/>
+            <point key="canvasLocation" x="808.69565217391312" y="1095.5357142857142"/>
         </scene>
         <!--DramaViewController-->
         <scene sceneID="SWD-6p-P7i">

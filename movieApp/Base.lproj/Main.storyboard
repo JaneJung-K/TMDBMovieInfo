@@ -127,6 +127,7 @@
                     </view>
                     <connections>
                         <outlet property="moviePoster" destination="0e2-OI-Dn6" id="Dkh-UY-ccg"/>
+                        <outlet property="movieTitle" destination="mI6-Ie-Fnr" id="fHF-c9-HOx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1c-4f-ZML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

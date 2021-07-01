@@ -7,6 +7,13 @@
 
 import Alamofire
 
+class GenresData {
+    static let shared = GenresData()
+    
+    var genresDetail: [GenresDetail]?
+    
+}
+
 class DetailApiCaller {
     func fetchData(id: Int, completion:  @escaping (DetailResponse) -> Void) {
         let apiKey = "afe279a4b6fb7def93b05fe10d91d8af"
@@ -39,7 +46,7 @@ struct DetailResponse: Codable {
 //    let production_companies: [Countries]?
 //    let release_date: String?
 //    let revenue: Int?
-//    let runtime: Int?
+    let runtime: Int?
 //    let spoken_languages: [Languages]?
 //    let status: String?
 //    let tagline: String?

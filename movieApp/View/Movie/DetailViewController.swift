@@ -20,6 +20,9 @@ class DetailViewController: UIViewController, UICollectionViewDelegate,UICollect
     @IBOutlet weak var moviePoster: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieGernes: UILabel!
+    @IBOutlet weak var movieRunTime: UILabel!
+    @IBOutlet weak var movieScore: UILabel!
+    @IBOutlet weak var movieOverview: UILabel!
     
     var getId: Int?
     
@@ -44,11 +47,19 @@ class DetailViewController: UIViewController, UICollectionViewDelegate,UICollect
             }
             
             self?.genresData.genresDetail = self?.data?.genres ?? []
-            print("영화의 장르 데이터는 \(self?.genresData.genresDetail)입니다.")
+            //print("영화의 장르 데이터는 \(self?.genresData.genresDetail)입니다.")
             self?.genresCollectionView.reloadData()
             
+            guard let r = self?.data?.runtime else { return }
+            self?.movieRunTime.text = String("\(r)분")
+            
+            guard let s = self?.data?.vote_average else { return }
+            self?.movieScore.text = String("\(s)점")
+            
+            guard let o = self?.data?.overview else { return }
+            self?.movieOverview.text = o
+            
             }
-        
         }
         
         //self.genresCollectionView!.register(GenresCollectionViewCell.self, forCellWithReuseIdentifier: "cell")

@@ -16,6 +16,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate,UICollect
     @IBOutlet weak var genresCollectionView: UICollectionView!
 
     let detailApiCaller = DetailApiCaller()
+    let similarMovieApiCaller = SimilarMovieApiCaller()
     
     @IBOutlet weak var moviePoster: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
@@ -28,15 +29,17 @@ class DetailViewController: UIViewController, UICollectionViewDelegate,UICollect
     
     private var data: DetailResponse?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        similarMovieApiCaller.fetchData(id: getId!) { [weak self] response in
+            print("유사한 영화는 \(response)입니다.")
+        }
+        
         detailApiCaller.fetchData(id: getId!) { [weak self] response in
-            print(response)
+           // print(response)
             self?.data = response
             
-                
             if let p = self?.data?.poster_path {
                 let url = URL(string:"https://image.tmdb.org/t/p/w500\(p)")
                 self?.moviePoster.kf.setImage(with: url)
@@ -47,7 +50,8 @@ class DetailViewController: UIViewController, UICollectionViewDelegate,UICollect
             }
             
             self?.genresData.genresDetail = self?.data?.genres ?? []
-            //print("영화의 장르 데이터는 \(self?.genresData.genresDetail)입니다.")
+            
+            // 여기에서 컬렉션뷰에 데이터가 표시된다. 처음 뷰 디드로드시 컬렉션뷰 셀에는 아무 데이터도 없다. 
             self?.genresCollectionView.reloadData()
             
             guard let r = self?.data?.runtime else { return }
@@ -61,29 +65,18 @@ class DetailViewController: UIViewController, UICollectionViewDelegate,UICollect
             
             }
         }
-        
-        //self.genresCollectionView!.register(GenresCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-            
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("숫자의 갯수는 \(genresData.genresDetail?.count) 입니다.")
-        print(genresData)
         return genresData.genresDetail?.count ?? 1
-       // return dummyData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GenresCollectionViewCell
         guard let d = genresData.genresDetail else { return cell }
-        //print("변수 d의 값은 \(d)입니다")
         cell.genresLabel.text = d[indexPath.row].name
-        //cell.genresLabel.text = dummyData[indexPath.row]
         return cell
        
     }
-    
-   
-
 }
 
 class GenresCollectionViewCell: UICollectionViewCell {

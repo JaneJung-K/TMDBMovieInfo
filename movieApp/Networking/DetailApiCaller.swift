@@ -31,42 +31,15 @@ class DetailApiCaller {
     }
 
 struct DetailResponse: Codable {
-//    let adult: Bool?
-//    let backdrop_path: String?
-//    let budget: Int?
     let genres: [GenresDetail]?
-//    let homepage: String?
-//    let id: Int?
-//    let imdb_id: String?
-//    let original_language: String?
-//    let original_title: String?
     let overview: String?
-//    let popularity: Int?
     let poster_path: String?
-//    let production_companies: [Countries]?
-//    let release_date: String?
-//    let revenue: Int?
     let runtime: Int?
-//    let spoken_languages: [Languages]?
-//    let status: String?
-//    let tagline: String?
     let title: String?
-//    let video: Bool?
     let vote_average: Double?
-//    let vote_count: Int?
 }
 
 struct GenresDetail: Codable {
     let id: Int?
     let name: String?
 }
-
-//struct Countries: Codable {
-//    let iso_3166_1: String?
-//    let name: String?
-//}
-//
-//struct Languages: Codable {
-//    let iso_639_1: String?
-//    let name: String?
-//}
